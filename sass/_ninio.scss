@@ -52,17 +52,21 @@ $bgBody: (
          max-width: 50px;
          max-height: none;
      }
+     h3 {
+        box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+     }
  }
 
- .row {
-     display: flex;
-     justify-content: center;
- }
+.row {
+    display: flex;
+    justify-content: center;
+}
 
  .col-sm-2 img {
      max-width: 100%;
      max-height: none;
      margin-bottom: 30px;
+     box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
  }
  .col-sm-2 img:hover {
     filter: grayscale(100%);

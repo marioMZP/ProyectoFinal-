@@ -35,6 +35,9 @@
 }
 
 .bajada {
+  width: 80%;
+  -webkit-box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+          box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +64,10 @@
 }
 
 .segmento {
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   text-align: center;
   color: white;
 }
@@ -178,6 +185,11 @@ footer p {
   max-height: none;
 }
 
+.ninio__description h3 {
+  -webkit-box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+          box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,6 +203,8 @@ footer p {
   max-width: 100%;
   max-height: none;
   margin-bottom: 30px;
+  -webkit-box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+          box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
 }
 
 .col-sm-2 img:hover {
@@ -253,9 +267,9 @@ footer p {
   text-align: center;
 }
 
-.bajada .bajada__bajada {
-  color: #726f6f;
-  font-size: 40px;
+.bajada .bajada__titulo {
+  -webkit-box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+          box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
 }
 
 .bajada .bajada__parrafo {
@@ -468,6 +482,8 @@ footer p {
 }
 
 .musica {
+  -webkit-box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+          box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
   border: 2px solid;
   margin: 50px auto 10px;
   text-align: center;
@@ -483,6 +499,8 @@ footer p {
 }
 
 .segmento2 {
+  -webkit-box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+          box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
   margin-top: 40px;
 }
 
