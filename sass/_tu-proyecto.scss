@@ -1,6 +1,29 @@
+$bgBody: (
+   lv: #792314,
+   nm: #6e1b5a, 
+   ll: #26218d,
+   tr: #a79f2f,
+   tp: #268542, 
+);
+
+@each $nombre, $valor in $bgBody {
+    .fondoBody__tp#{$nombre} {
+        color: $valor
+    }
+}
+
+.fondoBody__tp{
+    background: map-get($map: $bgBody, $key: tp);
+}
+
+.bajada {
+    margin: 80px auto 20px ;
+}
+
 .musica {
-    h2 {
-        font-size: 40px;
+    border: 2px solid;
+    h3 {
+        text-align: left;
     }
     margin: 50px auto 10px;
     text-align: center;
@@ -11,11 +34,14 @@
 }
 
 .segmento2 {
+    margin-top: 40px;
     h3 {
+        font-size: xx-large;
         text-align: center;
-        color: $colorTitulos;
+        color: #242323;
     }
     p {
+        margin-top: 30px;
         color: white;
     }
     ul {
@@ -58,4 +84,26 @@
     grid-column: 4/5;
     grid-row: 2/6;
 }
+
+.campo-tp {
+    display: flex;
+    width: 90%;
+    height: 80px;
+    margin: auto auto 30px   
+}
+.campo__form-tp {
+    width: 100%;
+    height: auto;
+}
+.campo__libre-tp {
+    @extend .campo__form-tp;
+    color: white;
+    text-align: center;
+    padding: auto 0;
+    background: radial-gradient(#a79f2f, #a8a357);
+
+}
+
+
+
 

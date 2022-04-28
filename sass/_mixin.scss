@@ -1,0 +1,44 @@
+$border: 1px solid black;
+
+@mixin campo__btn- {
+    display: inline-block;
+    width: 100px;
+    font-size: medium;
+    padding: 5px;
+    border: $border;
+}
+
+.campo__btn-index {
+    @include campo__btn-;
+    background: linear-gradient(#268542, #6c8574);
+    color: white;
+    text-decoration: none;
+}
+
+.campo__btn-ninio {
+    @include campo__btn-;
+    background: linear-gradient(#792314,#794c45);
+    color: white;
+    text-decoration: none;
+}
+
+.campo__btn-loop {
+    @include campo__btn-;
+    background: linear-gradient(#6e1b5a, #6e4c66);
+    color: white;
+    text-decoration: none;
+}
+
+.campo__btn-tr {
+    @include campo__btn-;
+    background: linear-gradient(#26218d, #605e8b);
+    color: white;
+    text-decoration: none;
+}
+
+.campo__btn-tp {
+    @include campo__btn-;
+    background: linear-gradient(#a79f2f, #aaa77b);
+    color: white;
+    text-decoration: none;
+}

@@ -1,17 +1,29 @@
 //NINIOMAFIA
 /* NINIOMAFIA*/
-body {
-    background-color: $colorPrincipal;
-    margin: 0;
-    padding: 0;
+
+$bgBody: (
+   lv: #792314,
+   nm: #6e1b5a, 
+   ll: #26218d,
+   tr: #a79f2f,
+   tp: #268542, 
+);
+
+@each $nombre, $valor in $bgBody {
+    .fondoBody#{$nombre} {
+        color: $valor;
+    }    
+}
+
+.fondoBody__nm {
+    background: map-get($map: $bgBody, $key: nm)
 }
 
 .titulo {
     color: $colorTitulos;
-    display: flex;
+    text-align: center;
     margin-top: 70px;
     justify-content: center;
-    width: 100%;
 }
 
 
@@ -50,12 +62,31 @@ body {
  .col-sm-2 img {
      max-width: 100%;
      max-height: none;
+     margin-bottom: 30px;
  }
  .col-sm-2 img:hover {
     filter: grayscale(100%);
     transform: scale(1.2);
    }
 
+   .campo-ninio {
+    display: flex;
+    width: 90%;
+    height: 80px;
+    margin: auto auto 30px   
+}
+.campo__form-ninio {
+    width: 100%;
+    height: auto;
+}
+.campo__libre-ninio {
+    @extend .campo__form-ninio;
+    color: white;
+    text-align: center;
+    padding: auto 0;
+    background: radial-gradient(#792314, #7a3c31);
+    
+}
 
  footer {
     div {

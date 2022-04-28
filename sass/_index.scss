@@ -3,10 +3,22 @@
 $colorPrincipal: #3b3a3a;
 $colorTitulos: #726f6f;
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: $colorPrincipal;
+$bgBody: (
+   lv: #792314,
+   nm: #6e1b5a, 
+   ll: #26218d,
+   tr: #a79f2f,
+   tp: #268542, 
+);
+
+@each $nombre, $valor in $bgBody {
+   .fondoBody__index#{$nombre} {
+        background: $valor;
+   } 
+}
+
+.fondoBody__index {
+    background: map-get($map: $bgBody, $key: lv )
 }
 
 .offcanvas-header {
@@ -35,28 +47,48 @@ body {
         text-decoration: none;
     }
 }
- .segmento {
-     text-align: center;
-     color: white;
-     h2 {
-         color: $colorTitulos;
-         display: flex;
-         margin-top: 30px;
-         justify-content: center;
-         width: 100%;
-         font-size: 30px;
-     }
- }
- 
- footer {
-     div {
-         display: flex;
-         justify-content: center;
-     }
-     p {
-         color: white;
-         margin-top: 5px;
-         margin-bottom: auto;
-         text-align: center;
-     }
- }
+.segmento {
+    text-align: center;
+    color: white;
+    h2 {
+        color: $colorTitulos;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        width: 100%;
+        font-size: 30px;
+    }
+}
+
+.campo-index {
+    display: flex;
+    width: 90%;
+    height: 80px;
+    margin: auto auto 30px   
+}
+.campo__form-index {
+    width: 100%;
+    height: auto;
+}
+.campo__libre-index {
+    @extend .campo__form-index;
+    color: white;
+    text-align: center;
+    padding: auto 0;
+    background: radial-gradient(#268542, #478058);
+    
+
+}
+
+footer {
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        color: white;
+        margin-top: 5px;
+        margin-bottom: auto;
+        text-align: center;
+    }
+}

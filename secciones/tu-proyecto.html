@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Proyecto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../sass/estilos.css">> 
+    <link rel="stylesheet" href="../sass/estilos.css">
     <link rel="stylesheet" href="../css/mi-estilo.css">
 </head>
-<body>
+<body class="fondoBody__tp">
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html" ><img src="../logo/logo3.jpg" alt="logo-LVV"></a>
@@ -41,13 +41,16 @@
         </div>
       </nav>
 
+      <div class="bajada">
+        <h1 class="bajada__titulo">TU PROYECTO!</h1>
+      </div>
+
       <div class="musica">
-        <h2>La música como lenguaje</h2>  
+        <h3>La música como lenguaje</h3>  
         <p>Es una de las herramientas más antiguas de nuestra civilazacion. Tiene el poder de decir, de exponer, de contar y, también, de unir a las personas sin importar raza, religión ni color. Hacemos uso de ella para expresar al mundo lo que tenemos dentro de una manera lúdica, variada y compleja.</p>  
     </div>
     
-    <hr>
-    <hr>
+  <hr>
 
     <div class="contenedor-grilla">
         <div class="item"><a href="./niniomafia.html"><img src="../grid-tuproyecto/Ninio.png" alt=""></a></div>
@@ -56,16 +59,25 @@
         <div class="item"><img src="../grid-tuproyecto/Proyecto.png" alt=""></div>
     </div>
 
+    <hr>
 
-    <div class="segmento2">
-      <h3 class="titulo2">Producimos musiquita con el cuore</h3>
-      <p class="parrafo2"><strong> Te invitamos a traer tu proyecto musical para producirlo desde cero o desde donde sea que se encuentre...</strong></p>
-          <ul>
-              <li>Desarrollamos la idea junto a vos, interviniendo de manera respetuosa</li>
-              <li>proponemos y formulamos ideas en conjunto</li>
-              <li>Música, letra, y videos</li>
-              <li>Maquetado y Finalizacion del producto</li>
-          </ul>
+      
+      <div class="segmento2">
+        <h3 class="titulo2">Producimos musiquita con el cuore</h3>
+        <p class="parrafo2"><strong> Te invitamos a traer tu proyecto musical para producirlo desde cero o desde donde sea que se encuentre...</strong></p>
+            <ul>
+                <li>Desarrollamos la idea junto a vos, interviniendo de manera respetuosa</li>
+                <li>proponemos y formulamos ideas en conjunto</li>
+                <li>Música, letra, y videos</li>
+                <li>Maquetado y Finalizacion del producto</li>
+            </ul>
+    </div>
+
+    <div class="campo-tp">
+      <form class="campo__form-tp">
+        <textarea class="campo__libre-tp" onclick='this.value=""'>Podés escribirnos acá cualquier cosa que se te ocurra (una idea, una opinión, una sugerencia...)</textarea>
+        <input type="submit" class="campo__btn-tp">
+      </form>
     </div>
 
 <footer>

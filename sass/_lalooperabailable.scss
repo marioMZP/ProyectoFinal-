@@ -1,3 +1,22 @@
+$bgBody: (
+   lv: #792314,
+   nm: #6e1b5a, 
+   ll: #26218d,
+   tr: #a79f2f,
+   tp: #268542, 
+);
+
+ @each $nombre, $valor in &bgBody {
+     .fondoBody#{$nombre} {
+         color: $valor;
+     }     
+ }
+
+ .fondoBody__llb {
+     background: map-get($map: $bgBody, $key: ll)
+ }
+
+
 .bajada {
     display: flex;
     margin-top: 80px;
@@ -28,6 +47,25 @@
         width: 100%;
         font-size: 30px;
     }
+}
+
+.campo-loop {
+    display: flex;
+    width: 90%;
+    height: 80px;
+    margin: auto auto 30px   
+}
+.campo__form-loop {
+    width: 100%;
+    height: auto;
+}
+.campo__libre-loop {
+    @extend .campo__form-loop;
+    color: white;
+    text-align: center;
+    padding: auto 0;
+    background: radial-gradient(#6e1b5a, #703362);
+
 }
 
 footer {
