@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../sass/estilos.css">
 
 </head>
-<body>
+<body class="fondoBody__nm">
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"><img src="../logo/logo3.jpg" alt="logo-LVV"></a>
@@ -42,8 +42,8 @@
         </div>
       </nav>
 
-      <section class="titulo">
-          <h1>NINIOMAFIA</h1>
+      <section class="bajada">
+          <h1 class="bajada__titulo">NINIOMAFIA</h1>
       </section>
     <main id="principal">
         <div class="video-responsive">
@@ -77,6 +77,13 @@
         </div>
         
       </div>
+    </div>
+
+    <div class="campo-ninio">
+      <form class="campo__form-ninio">
+        <textarea class="campo__libre-ninio" onclick='this.value=""'>Podés escribirnos acá cualquier cosa que se te ocurra (una idea, una opinión, una sugerencia...)</textarea>
+        <input type="submit" class="campo__btn-ninio">
+      </form>
     </div>
 
     <footer>

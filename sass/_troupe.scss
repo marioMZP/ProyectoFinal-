@@ -1,4 +1,19 @@
+$bgBody: (
+   lv: #792314,
+   nm: #6e1b5a, 
+   ll: #26218d,
+   tr: #a79f2f,
+   tp: #268542, 
+);
 
+@each $nombre, $valor in $bgBody {
+    .fondoBody__tr#{$nombre} {
+        color: $valor;
+    }
+}
+ .fondoBody__tr {
+     background: map-get($map: $bgBody, $key: tr)
+ }
 
 
 #carouselExampleInterval {
@@ -32,8 +47,9 @@
     width: 70%;
     height: 400px;
     margin: 20px auto;
+    border-radius: 10px;
     overflow: auto;
-    background: radial-gradient($colorTitulos, $colorPrincipal);
+    background: radial-gradient(rgb(82, 82, 6), #a79f2f);
     h2 {
         width: 100%;
         height: auto;
@@ -55,6 +71,25 @@
 }
 .introduccion__percu::-webkit-scrollbar-thumb {
     background-color: $colorTitulos;
+}
+
+.campo-tr {
+    display: flex;
+    width: 90%;
+    height: 80px;
+    margin: auto auto 30px   
+}
+.campo__form-tr {
+    width: 100%;
+    height: auto;
+}
+.campo__libre-tr {
+    @extend .campo__form-tr;
+    color: white;
+    text-align: center;
+    padding: auto 0;
+    background: radial-gradient(#26218d, #433f8b);
+
 }
 
         
