@@ -1,5 +1,9 @@
-//NINIOMAFIA
-/* NINIOMAFIA*/
+$colorTitulos: #726f6f;
+$fuenteGoogle: ('Gluten', cursive);
+
+.fondoBody__nm {
+    background-image: url(../img/bg/ninio.svg);
+}
 
 $bgBody: (
    lv: #792314,
@@ -10,12 +14,12 @@ $bgBody: (
 );
 
 @each $nombre, $valor in $bgBody {
-    .fondoBody#{$nombre} {
-        color: $valor;
+    .ninio__description {
+        background-color: #6e1b5a;
     }    
 }
 
-.fondoBody__nm {
+.ninio__description {
     background: map-get($map: $bgBody, $key: nm)
 }
 
@@ -43,6 +47,7 @@ $bgBody: (
 }
 
  .ninio__description {
+     width: 100%;
      display: inline-block;
      padding: 15px;
      color: white;
