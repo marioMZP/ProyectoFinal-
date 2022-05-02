@@ -28,9 +28,17 @@ $bgBody: (
  .offcanvas-body-nm{
      background: map-get($map: $bgBody, $key: nm )
  }
+
+ .offcanvas-header-nm {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    padding: 10px 10px;
+}
   .offcanvas-body-nm {
       font-family: $fuenteGoogle;
       height: 100%;
+      padding-left: 10px;
   }
  
  .offcanvas-title-nm {

@@ -25,7 +25,7 @@ $bgBody: (
 .offcanvas-header {
     background: map-get($map: $bgBody, $key: lv )
 }
-.offcanvas-body{
+.offcanvas-body {
     background: map-get($map: $bgBody, $key: lv )
 }
  .offcanvas-body {
@@ -40,7 +40,6 @@ $bgBody: (
 #carouselExampleFade {
     margin: 0 auto;
     width: 90%;
-    height: auto;
 }
 
 .bajada {
@@ -58,7 +57,7 @@ $bgBody: (
     }
     & &__parrafo {
         color: white;
-        font-size: xx-large;
+        font-size: large;
     }
     & &__anc {
         text-decoration: none;

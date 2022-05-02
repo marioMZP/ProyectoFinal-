@@ -1,3 +1,10 @@
+$colorTitulos: #726f6f;
+$fuenteGoogle: ('Gluten', cursive);
+
+.fondoBody__tr {
+    background-image: url(../img/bg/troupe.svg);
+}
+
 $bgBody: (
    lv: #792314,
    nm: #6e1b5a, 
@@ -7,33 +14,54 @@ $bgBody: (
 );
 
 @each $nombre, $valor in $bgBody {
-    .fondoBody__tr#{$nombre} {
-        color: $valor;
+    .offcanvas-header-tr#{nombre} {
+         background: $valor;
+    }
+    .offcanvas-body-tr#{nombre} {
+         background: $valor;
     }
 }
- .fondoBody__tr {
-     background: map-get($map: $bgBody, $key: tr)
- }
-
-
-#carouselExampleInterval {
-    max-width: 70%;
-    max-height: auto;
-    margin: 0 auto;
+ 
+.offcanvas-header-tr {
+    background: map-get($map: $bgBody, $key: tr )
+}
+.offcanvas-body-tr {
+    background: map-get($map: $bgBody, $key: tr )
+}
+.offcanvas-header-tr {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    padding: 10px 10px;
+}
+.offcanvas-body-tr {
+    font-family: $fuenteGoogle;
+    height: 100%;
+    padding-left: 10px;
+}
+ 
+.offcanvas-title-tr {
+    font-family: $fuenteGoogle;
+    color: white;
 }
 
-.bajada {
+.bajada-tr {
     display: flex;
-    margin-top: 80px;
+    width: 90%;
+    font-family: $fuenteGoogle;
+    background-color: #a79f2f;
+    margin: 80px auto 30px;
+    box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
     flex-direction: column;
     text-align: center;
-    & &__bajada {
+    & &__titulo {
+        box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
         color: $colorTitulos;
-        font-size: 40px;
+        font-size: 45px;
     }
     & &__parrafo {
         color: white;
-        font-size: medium;
+        font-size: large;
     }
     img {
         width: 50px;
@@ -46,20 +74,20 @@ $bgBody: (
 .introduccion__percu {
     width: 70%;
     height: 400px;
+    font-family: $fuenteGoogle;
     margin: 20px auto;
     border-radius: 10px;
+    box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
     overflow: auto;
     background: radial-gradient(rgb(82, 82, 6), #a79f2f);
     h2 {
         width: 100%;
         height: auto;
         margin-top: 0;
-        background: #333333;
+        background: #a79f2f;
         text-align: center;
         position: sticky;
-        top: 0;
-        
-        
+        top: 0;    
     }
     p {
         text-align: center;
@@ -70,7 +98,7 @@ $bgBody: (
     width: 5px;
 }
 .introduccion__percu::-webkit-scrollbar-thumb {
-    background-color: $colorTitulos;
+    background-color: #a79f2f;
 }
 
 .campo-tr {
@@ -86,10 +114,29 @@ $bgBody: (
 .campo__libre-tr {
     @extend .campo__form-tr;
     color: white;
+    font-family: $fuenteGoogle;
     text-align: center;
     padding: auto 0;
-    background: radial-gradient(#26218d, #433f8b);
+    background: radial-gradient(#26218d, #6ae2e2);
 
+}
+
+.campo__btn-tr {
+    font-family: $fuenteGoogle;
+}
+.troupe {
+    div {
+        font-family: $fuenteGoogle;
+        background-color: #a79f2f;
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        color: white;
+        margin-top: 5px;
+        margin-bottom: auto;
+        text-align: center;
+    }
 }
 
         

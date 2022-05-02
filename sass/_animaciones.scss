@@ -52,7 +52,7 @@
     animation-duration: 4s;
     animation-delay: 1s;
 }
- //TROUPE PERCUSION//
+
  /* TROUPE*/
 
  @keyframes mi-animacion {
@@ -67,6 +67,14 @@
     80% { color: #3a3838; }
     90% { color: #4d4a4a; }
     100% { color: #726f6f; }
+}
+
+.bajada-tr__titulo {
+        animation-name: mi-animacion;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 4s;
+        animation-delay: 1s;
 }
 .introduccion__percu {
     h2 {
