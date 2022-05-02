@@ -14,10 +14,10 @@ $bgBody: (
 );
 
 @each $nombre, $valor in $bgBody {
-    .offcanvas-header#{nombre} {
+    .offcanvas-header-nm#{nombre} {
          background: $valor;
     }
-    .offcanvas-body#{nombre} {
+    .offcanvas-body-nm#{nombre} {
          background: $valor;
     }
  }
