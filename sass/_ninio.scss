@@ -1,4 +1,4 @@
-$colorTitulos: #726f6f;
+$colorTitulos: #dfdddd;
 $fuenteGoogle: ('Gluten', cursive);
 
 .fondoBody__nm {
@@ -6,7 +6,7 @@ $fuenteGoogle: ('Gluten', cursive);
 }
 
 $bgBody: (
-   lv: #792314,
+   lv: #EE5D0E,
    nm: #6e1b5a, 
    ll: #26218d,
    tr: #a79f2f,
@@ -28,6 +28,7 @@ $bgBody: (
  .offcanvas-body-nm{
      background: map-get($map: $bgBody, $key: nm )
  }
+
 
  .offcanvas-header-nm {
     display: flex;

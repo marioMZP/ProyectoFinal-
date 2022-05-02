@@ -13,7 +13,7 @@
     100% { color: #726f6f; }
 }
 
-.bajada h1 {
+.bajada__titulo{
     animation-name: mi-animacion;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -21,7 +21,7 @@
     animation-delay: 2s;
 }
 
-.segmento h2 {
+.segmento_subtitulo {
     animation-name: mi-animacion;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -51,6 +51,38 @@
     animation-timing-function: linear;
     animation-duration: 4s;
     animation-delay: 1s;
+}
+
+/*LA LOOPERA*/
+@keyframes mi-animacion {
+    0% { color: #726f6f; }
+    10% { color: #4d4a4a; }
+    20% { color: #3a3838; }
+    30% { color: #222121; }
+    40% { color: #141414; }
+    50% { color: #000000; }
+    60% { color: #141414; }
+    70% { color: #222121; }
+    80% { color: #3a3838; }
+    90% { color: #4d4a4a; }
+    100% { color: #726f6f; }
+}
+
+.bajada__titulo {
+    animation-name: mi-animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+.segmento-llb {
+    h4 {
+    animation-name: mi-animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
 }
 
  /* TROUPE*/
@@ -86,7 +118,6 @@
         }
 }
 
-//ANIMACIONES TU PROYECTO//
 /* ANIMACIONES TU PROYECTO*/
 
 @keyframes mi-animacion {
@@ -103,12 +134,26 @@
     100% { color: #726f6f; }
 }
 
-.musica {
-    h3 {
-        animation-name: mi-animacion;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 4s;
-        animation-delay: 1s;
-        }
+.bajada-tp__titulo {
+    animation-name: mi-animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+.titulo2 {
+    animation-name: mi-animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+.segmento {
+    &__subtitulo {
+    animation-name: mi-animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
 }

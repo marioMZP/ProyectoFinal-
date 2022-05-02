@@ -1,4 +1,4 @@
-$colorTitulos: #726f6f;
+$colorTitulos: #dfdddd;
 $fuenteGoogle: ('Gluten', cursive);
 
 .fondoBody__llb {
@@ -6,7 +6,7 @@ $fuenteGoogle: ('Gluten', cursive);
 }
 
 $bgBody: (
-   lv: #792314,
+   lv: #EE5D0E,
    nm: #6e1b5a, 
    ll: #26218d,
    tr: #a79f2f,
@@ -50,12 +50,13 @@ $bgBody: (
     width: 95%;
     box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
     margin: 20px auto 20px;
-    background-color: #26218d;
+    background-color: transparent;
     margin-top: 80px;
     flex-direction: column;
     font-family: $fuenteGoogle;
     text-align: center;
     & .bajada__titulo {
+        background-color: #26218d;
         box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
 
     }
@@ -114,7 +115,7 @@ $bgBody: (
 }
 
 .segmento-llb {
-    background-color: #26218d;
+    background-color: transparent;
     width: 90%;
     margin: auto;
     box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
@@ -123,6 +124,7 @@ $bgBody: (
     color: white;
     h4 {
         color: $colorTitulos;
+        background-color: #26218d;
         box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
         display: flex;
         margin-top: 30px;
