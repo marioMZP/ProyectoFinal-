@@ -14,22 +14,46 @@ $bgBody: (
 );
 
 @each $nombre, $valor in $bgBody {
-    .ninio__description {
-        background-color: #6e1b5a;
-    }    
-}
+    .offcanvas-header#{nombre} {
+         background: $valor;
+    }
+    .offcanvas-body#{nombre} {
+         background: $valor;
+    }
+ }
+ 
+ .offcanvas-header-nm {
+     background: map-get($map: $bgBody, $key: nm )
+ }
+ .offcanvas-body-nm{
+     background: map-get($map: $bgBody, $key: nm )
+ }
+  .offcanvas-body-nm {
+      font-family: $fuenteGoogle;
+      height: 100%;
+  }
+ 
+ .offcanvas-title-nm {
+     font-family: $fuenteGoogle;
+     color: white;
+ }
 
-.ninio__description {
-    background: map-get($map: $bgBody, $key: nm)
-}
-
-.titulo {
-    color: $colorTitulos;
+.bajada__ninio {
+    background: transparent;
+    width: 100%;
+    height: auto;
+    font-family: $fuenteGoogle;
+    display: flex;
+    margin: 70px auto ;
+    flex-direction: column;
     text-align: center;
-    margin-top: 70px;
-    justify-content: center;
+    h1 {
+        background-color: #6e1b5a;
+        text-align: center;
+        padding: 5px auto 5px;
+        font-size: 50px;
+    }
 }
-
 
 .video-responsive {
 	height: auto;
@@ -46,39 +70,43 @@ $bgBody: (
 	width: 100%;
 }
 
- .ninio__description {
-     width: 100%;
-     display: inline-block;
-     padding: 15px;
-     color: white;
-     text-align: center;
-     margin: 20 px 40px;
-     img {
-         max-width: 50px;
-         max-height: none;
-     }
-     h3 {
+.ninio__description {
+    width: 100%;
+    height: 446px;
+    background: transparent;
+    display: inline-block;
+    padding: 15px;
+    font-family: $fuenteGoogle;
+    color: white;
+    text-align: center;
+    margin: 20 px 40px;
+    img {
+        max-width: 50px;
+        max-height: none;
+    }
+    h3 {
+        background-color: #6e1b5a;
         box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
-     }
- }
+    }
+}
 
 .row {
     display: flex;
     justify-content: center;
 }
 
- .col-sm-2 img {
-     max-width: 100%;
-     max-height: none;
-     margin-bottom: 30px;
-     box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
- }
- .col-sm-2 img:hover {
+.col-sm-2 img {
+    max-width: 100%;
+    max-height: none;
+    margin-bottom: 30px;
+    box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+}
+.col-sm-2 img:hover {
     filter: grayscale(100%);
     transform: scale(1.2);
-   }
+}
 
-   .campo-ninio {
+.campo-ninio {
     display: flex;
     width: 90%;
     height: 80px;
@@ -91,14 +119,19 @@ $bgBody: (
 .campo__libre-ninio {
     @extend .campo__form-ninio;
     color: white;
+    font-family: $fuenteGoogle;
     text-align: center;
     padding: auto 0;
     background: radial-gradient(#792314, #7a3c31);
-    
+}
+.campo__btn-ninio {
+    font-family: $fuenteGoogle;
 }
 
- footer {
+.ninio {
     div {
+        font-family: $fuenteGoogle;
+        background-color: #6e1b5a;
         display: flex;
         justify-content: center;
     }
