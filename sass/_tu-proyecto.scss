@@ -152,6 +152,12 @@ $bgBody: (
     text-align: center;
     padding: auto 0;
     background: radial-gradient(#a79f2f, #a8a357);
+    .campo__libre-tp::-webkit-scrollbar {
+        width: 5px;
+    }
+    .campo__libre-tp::-webkit-scrollbar-thumb {
+        background-color: #a79f2f;
+    }
 }
 
 .pie-tp {
@@ -160,6 +166,7 @@ $bgBody: (
         background-color: #268542;
         display: flex;
         justify-content: center;
+        border: 1px solid #013611;
     }
     p {
         color: white;

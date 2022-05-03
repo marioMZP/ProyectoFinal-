@@ -102,6 +102,17 @@ $bgBody: (
     background-color: #a79f2f;
 }
 
+.batero {
+    display: flex;
+    justify-content: center;
+    margin:  10px auto 20px;
+    width: 40%;
+    height: auto;
+    img {
+        width: 100%;
+    }
+}
+
 .campo-tr {
     display: flex;
     width: 90%;
@@ -119,6 +130,12 @@ $bgBody: (
     text-align: center;
     padding: auto 0;
     background: radial-gradient(#26218d, #6ae2e2);
+    .campo__libre-tr::-webkit-scrollbar {
+        width: 5px;
+    }
+    .campo__libre-tr::-webkit-scrollbar-thumb {
+        background-color: #a79f2f;
+    }
 
 }
 
@@ -131,6 +148,7 @@ $bgBody: (
         background-color: #a79f2f;
         display: flex;
         justify-content: center;
+        border: 1px solid #3a3602;
     }
     p {
         color: white;

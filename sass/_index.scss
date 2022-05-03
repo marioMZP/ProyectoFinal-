@@ -90,8 +90,8 @@ $bgBody: (
 
 .campo-index {  
     display: flex;
-    width: 70%;
-    height: 80px;
+    width: 90%;
+    height: auto;
     margin: auto auto 30px   
 }
 .campo__form-index {
@@ -105,14 +105,21 @@ $bgBody: (
     text-align: center;
     padding: auto 0;
     background: radial-gradient(#268542, #478058);
+    .campo__libre-index::-webkit-scrollbar {
+        width: 5px;
+    }
+    .campo__libre-index::-webkit-scrollbar-thumb {
+        background-color: #a79f2f;
+    }
 }
 
 footer {
     div {
         font-family: $fuenteGoogle;
-        background-color: #EE5D0E;
+        background-color: #ee5d0e;
         display: flex;
         justify-content: center;
+        border: 1px solid #2e1101;
     }
     p {
         color: white;
